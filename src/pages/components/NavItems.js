@@ -4,33 +4,21 @@ import "./NavItems.css";
 const NavItems = ({ handlePageChange }) => {
   return (
     <div>
-      <ul>
-        <li>
-          <a href="#home" onClick={() => handlePageChange("Home")}>
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="#about" onClick={() => handlePageChange("About")}>
-            About
-          </a>
-        </li>
-        <li>
-          <a href="#projects" onClick={() => handlePageChange("Projects")}>
-            Projects
-          </a>
-        </li>
-        <li>
-          <a href="#skills" onClick={() => handlePageChange("Skills")}>
-            Skills
-          </a>
-        </li>
-        <li>
-          <a href="#contact" onClick={() => handlePageChange("Contact")}>
-            Contact
-          </a>
-        </li>
-      </ul>
+      <button onClick={() => handlePageChange("Home")}>
+        <a href="#home">Home</a>
+      </button>
+      <button onClick={() => handlePageChange("About")}>
+        <a href="#about">About</a>
+      </button>
+      <button onClick={() => handlePageChange("Projects")}>
+        <a href="#projects">Projects</a>
+      </button>
+      <button onClick={() => handlePageChange("Skills")}>
+        <a href="#skills">Skills</a>
+      </button>
+      <button onClick={() => handlePageChange("Contact")}>
+        <a href="#contact">Contact</a>
+      </button>
     </div>
   );
 };
