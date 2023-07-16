@@ -5,6 +5,7 @@ import About from "./About";
 import Projects from "./Projects";
 import Skills from "./Skills";
 import Contact from "./Contact";
+import "./Portfolio.css";
 
 const Portfolio = () => {
   const [currentPage, setCurrentPage] = useState("Home");
@@ -28,7 +29,7 @@ const Portfolio = () => {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div>
+    <div className="container">
       <NavBar currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
     </div>

@@ -3,7 +3,7 @@ import "./NavItems.css";
 
 const NavItems = ({ handlePageChange }) => {
   return (
-    <div>
+    <div className="nav-items">
       <button onClick={() => handlePageChange("Home")}>
         <a href="#home">Home</a>
       </button>
