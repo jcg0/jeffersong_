@@ -1,0 +1,18 @@
+/* .container {
+  height: 50%;
+  width: 50%;
+} */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  height: 50vh;
+  font-size: xxx-large;
+}
+
+/* h1 {
+  margin: 0;
+} */

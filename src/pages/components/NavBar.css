@@ -2,4 +2,12 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  background: black;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.nav-name {
+  color: whitesmoke;
+  font-size: xx-large;
 }

@@ -1,11 +1,37 @@
-/* .nav-items {
+.nav-items {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  padding: 0px 4px; 
+  justify-content: space-between;
+  /* padding: 0px 4px;  */
+  /* margin: 0px 4px; */
 }
 
-.nav-items button {
+button {
   padding: 4px;
-  margin: 0px 4px;
-} */
+  width: 115px;
+  height: 45px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 2px whitesmoke solid;
+  transition: all .7s ease;
+  color: whitesmoke;
+  font-size: large;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #000;
+  background-color: whitesmoke;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: large;
+  margin: 0px 10px;
+  /* line-height: 1.7px; */
+}
+
+a:hover {
+  color: #000
+}

@@ -6,7 +6,7 @@ import "./NavBar.css";
 const NavBar = (props) => {
   return (
     <div className="navBarContent">
-      <div>Jefferson Griebel</div>
+      <div className="nav-name">Jefferson Griebel</div>
       <NavItems handlePageChange={props.handlePageChange} />
       <Links />
     </div>
