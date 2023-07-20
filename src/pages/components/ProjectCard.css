@@ -1,0 +1,26 @@
+.project-name {
+  font-size: 200%;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.project-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border: whitesmoke 2px solid;
+  border-radius: 10px;
+  opacity: .6;
+  transition: .7s;
+}
+
+.project-card-container:hover{
+  opacity: 1;
+}
+
+.project-card-img {
+  height: 150px;
+  width: 300px;
+  border-radius: 10px;
+}

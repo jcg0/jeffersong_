@@ -1,6 +1,43 @@
 import React from "react";
+import ProjectCard from "./components/ProjectCard";
+import CodeCollective from "../assets/images/CodeCollective.png";
+import Recipesy from "../assets/images/Recipesy.png";
+import WeatherDashboard from "../assets/images/WeatherDashboard.png";
+import "./Projects.css";
+
 const Projects = () => {
-  return <div>projects</div>;
+  const projects = [
+    {
+      id: "01",
+      img: CodeCollective,
+      name: "Code Collective",
+      url: "https://code-collectives.herokuapp.com/",
+    },
+    {
+      id: "02",
+      img: WeatherDashboard,
+      name: "Weather Dashboard",
+      url: "https://github.com/jcg0/mod6-challenge",
+    },
+    {
+      id: "03",
+      img: Recipesy,
+      name: "Recipesy",
+      url: "https://github.com/jcg0/project-1-recipesy",
+    },
+  ];
+
+  return (
+    <div className="project-container">
+      {projects.map((projects) => (
+        <ProjectCard
+          img={projects.img}
+          name={projects.name}
+          url={projects.url}
+        />
+      ))}
+    </div>
+  );
 };
 
 export default Projects;
