@@ -13,15 +13,30 @@ button {
   background-color: transparent;
   border-radius: 10px;
   border: 2px whitesmoke solid;
-  transition: all .7s ease;
+  transition: all .5s ease;
   color: whitesmoke;
   font-size: large;
+  opacity: .6;
+}
+
+button:active {
+  background-color: whitesmoke;
+  color: #000;
+  transition: none;
+
+}
+
+button:focus {
+  background-color: whitesmoke;
+  color: #000;
+  opacity: 1;
 }
 
 button:hover {
+  opacity: 1;
   cursor: pointer;
-  color: #000;
-  background-color: whitesmoke;
+  /* color: #000;
+  background-color: whitesmoke; */
 }
 
 a {

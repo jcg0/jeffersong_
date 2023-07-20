@@ -17,13 +17,13 @@ const Projects = () => {
       id: "02",
       img: WeatherDashboard,
       name: "Weather Dashboard",
-      url: "https://github.com/jcg0/mod6-challenge",
+      url: "https://jcg0.github.io/mod6-challenge/",
     },
     {
       id: "03",
       img: Recipesy,
       name: "Recipesy",
-      url: "https://github.com/jcg0/project-1-recipesy",
+      url: "https://jcg0.github.io/project-1-recipesy/",
     },
   ];
 

@@ -11,14 +11,14 @@ const Links = () => {
         rel="noopener noreferrer"
         target="_blank"
       >
-        <img src={linkedIn} className="linkedin" alt="linkedin icon" />
+        <img src={linkedIn} className="social-img" alt="linkedin icon" />
       </a>
       <a
         href="https://github.com/jcg0"
         rel="noopener noreferrer"
         target="_blank"
       >
-        <img src={gitHub} alt="github icon" />
+        <img src={gitHub} alt="github icon" className="social-img" />
       </a>
     </div>
   );
