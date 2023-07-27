@@ -19,24 +19,23 @@ button {
   opacity: .6;
 }
 
-button:active {
+/* button:active {
   background-color: whitesmoke;
   color: #000;
   transition: none;
 
-}
+} */
 
 button:focus {
-  background-color: whitesmoke;
-  color: #000;
+  color: #fff;
+  border: 2px #E6A817 solid;
   opacity: 1;
 }
 
 button:hover {
   opacity: 1;
   cursor: pointer;
-  /* color: #000;
-  background-color: whitesmoke; */
+  border: 2px #E6A817 solid;
 }
 
 a {
