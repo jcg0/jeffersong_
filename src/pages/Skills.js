@@ -1,52 +1,64 @@
 import React from "react";
 import SkillsList from "./components/SkillsList";
+import "./Skills.css";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const iconClass = [
   {
     id: "01",
-    name: "fa-brands fa-square-js",
+    className: "fa-brands fa-square-js",
+    name: "JavaScript",
   },
   {
     id: "02",
-    name: "fa-brands fa-react",
+    className: "fa-brands fa-react",
+    name: "React",
   },
   {
     id: "03",
-    name: "fa-brands fa-node",
+    className: "fa-brands fa-node",
+    name: "Node.js",
   },
   {
     id: "04",
-    name: "fa-solid fa-database",
+    className: "fa-solid fa-database",
+    name: "MongoDB",
   },
   {
     id: "05",
-    name: "fa-solid fa-table",
+    className: "fa-solid fa-table",
+    name: "MySQL",
   },
   {
     id: "06",
-    name: "fa-solid fa-server",
+    className: "fa-solid fa-server",
+    name: "Express",
   },
   {
     id: "07",
-    name: "fa-solid fa-diagram-project",
+    className: "fa-solid fa-diagram-project",
+    name: "GraphQL",
   },
   {
     id: "08",
-    name: "fa-brands fa-git-alt",
-  },
-  {
-    id: "09",
-    name: "fa-brands fa-square-js",
+    className: "fa-brands fa-git-alt",
+    name: "Git",
   },
 ];
 
 const Skills = () => {
   return (
-    <div>
-      {iconClass.map((iconClass) => (
-        <SkillsList icons={iconClass.name} key={iconClass.id} />
-      ))}
-      {/* <FontAwesomeIcon icon="square-js" /> */}
+    <div className="skills-container">
+      <div className="skills-list-container">
+        {iconClass.map((iconClass) => (
+          <SkillsList
+            className="skills-list"
+            skillName={iconClass.name}
+            icons={iconClass.className}
+            key={iconClass.id}
+          />
+        ))}
+        {/* <FontAwesomeIcon icon="square-js" /> */}
+      </div>
     </div>
   );
 };
